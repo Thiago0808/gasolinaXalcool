@@ -10,7 +10,7 @@ import logoImg from './assets/logo.png'
 
 function App() {
   const [gasolinaInput, setGasolinaInput] = useState(1)
-  const [alcoolInput, setAlcoolInput] = useState(2)
+  const [alcoolInput, setAlcoolInput] = useState(1)
 
   function calcular(event:FormEvent){
     event.preventDefault();
@@ -34,10 +34,10 @@ function App() {
 
           <form className="form" onSubmit={calcular}>
             <label htmlFor="">Álcool (preço por litro)</label>
-            <input className='input' type="number" placeholder='4,90' min={1} step={0.01} required/>
+            <input className='input' type="number" placeholder='4,90' min={1} step={0.01} required value={alcoolInput} onChange={ (e) => setAlcoolInput(Number(e.target.value))}/>
 
             <label htmlFor="">Gasolina (preço por litro)</label>
-            <input className='input' type="number" placeholder='4,90' min={1} step={0.01} required/>
+            <input className='input' type="number" placeholder='4,90' min={1} step={0.01} required value={gasolinaInput} onChange={ (e) => setGasolinaInput(Number(e.target.value))}/>
 
             <input className='button' type="submit" value="Calcular"/>
           </form>
