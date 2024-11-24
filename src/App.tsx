@@ -9,8 +9,8 @@ import logoImg from './assets/logo.png'
 // Se o resultado for menor que 0.7, compensa usar álcool
 
 function App() {
-  const [gasolinaInput, setGasolinaInput] = useState(1)
-  const [alcoolInput, setAlcoolInput] = useState(1)
+  const [gasolinaInput, setGasolinaInput] = useState(0)
+  const [alcoolInput, setAlcoolInput] = useState(0)
 
   function calcular(event:FormEvent){
     event.preventDefault();
@@ -41,6 +41,15 @@ function App() {
 
             <input className='button' type="submit" value="Calcular"/>
           </form>
+
+          <section className='result'>
+            <h2 className='result-title'>Compensa usar álcool</h2>
+
+            <span>Álcool R$ 4,30</span>
+            <span>Gasolina R$ 5,10</span>
+          </section>
+
+
         </main>
       </div>
   )
