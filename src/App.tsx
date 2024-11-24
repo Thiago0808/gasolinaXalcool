@@ -1,15 +1,15 @@
 import './App.css'
-import { useState } from 'react'
+// import { useState } from 'react'
 
 import logoImg from './assets/logo.png'
 
 function App() {
-  const [gasolinaInput, setGasolinaInput] = useState(1)
-  const [alcoolInput, setAlcoolInput] = useState(2)
+  // const [gasolinaInput, setGasolinaInput] = useState(1)
+  // const [alcoolInput, setAlcoolInput] = useState(2)
 
-  function calcular(){
+  // function calcular(){
     
-  }
+  // }
 
 
   return (
