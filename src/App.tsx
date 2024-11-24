@@ -5,6 +5,9 @@ import { useState, FormEvent } from 'react'
 
 import logoImg from './assets/logo.png'
 
+// Cálculo: Álcool / Gasolina
+// Se o resultado for menor que 0.7, compensa usar álcool
+
 function App() {
   const [gasolinaInput, setGasolinaInput] = useState(1)
   const [alcoolInput, setAlcoolInput] = useState(2)
