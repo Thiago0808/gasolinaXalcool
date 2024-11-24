@@ -14,6 +14,14 @@ function App() {
 
   function calcular(event:FormEvent){
     event.preventDefault();
+
+    let calculo = (alcoolInput/gasolinaInput)
+
+    if(calculo <= 0.7){
+      alert("Compensa usar Alcool")
+    }else{
+      alert("Compensa usar gasolina")
+    }
     
   }
 
