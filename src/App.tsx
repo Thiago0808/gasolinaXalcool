@@ -8,9 +8,16 @@ import logoImg from './assets/logo.png'
 // Cálculo: Álcool / Gasolina
 // Se o resultado for menor que 0.7, compensa usar álcool
 
+interface InfoProps{
+  title: string;
+  gasolina: string | number;
+  alcool: string | number;
+}
+
 function App() {
   const [gasolinaInput, setGasolinaInput] = useState(0)
   const [alcoolInput, setAlcoolInput] = useState(0)
+  const [info, setInfo] = useState<InfoProps>()
 
   function calcular(event:FormEvent){
     event.preventDefault();
@@ -18,11 +25,29 @@ function App() {
     let calculo = (alcoolInput/gasolinaInput)
 
     if(calculo <= 0.7){
-      alert("Compensa usar Alcool")
+      setInfo({
+        title: "Compensa usar Álcool",
+        gasolina: formatarMoeda(gasolinaInput),
+        alcool: formatarMoeda(alcoolInput),
+      })
     }else{
-      alert("Compensa usar gasolina")
+      setInfo({
+        title: "Compensa usar Gasolina",
+        gasolina: formatarMoeda(gasolinaInput),
+        alcool: formatarMoeda(alcoolInput),
+      })    
     }
     
+  }
+
+  function formatarMoeda(valor:number){
+    let valorFormatado=valor. toLocaleString("pt-br",
+    {
+      style: "currency",
+      currency: "BRL"
+    })
+
+    return valorFormatado
   }
 
 
@@ -42,12 +67,15 @@ function App() {
             <input className='button' type="submit" value="Calcular"/>
           </form>
 
-          <section className='result'>
-            <h2 className='result-title'>Compensa usar álcool</h2>
+          {info && Object.keys(info).length>0 && (    
+            <section className='result'>
+              <h2 className='result-title'>{info.title}</h2>
 
-            <span>Álcool R$ 4,30</span>
-            <span>Gasolina R$ 5,10</span>
-          </section>
+              <span>Álcool: {info.alcool}</span>
+              <span>Gasolina: {info.gasolina}</span>
+            </section>
+          )} 
+
 
 
         </main>
