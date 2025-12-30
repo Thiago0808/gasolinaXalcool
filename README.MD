@@ -1,3 +1,69 @@
+<p align="center">
+  <a href="#-english">🇺🇸 English</a> •
+  <a href="#-português">🇧🇷 Português</a>
+</p>
+
+---
+
+## 🇺🇸 English
+
+# ⛽ Gasoline vs Alcohol Calculator
+
+A small project developed with the goal of **practicing React, TypeScript, and the use of Git branches**.
+
+The application calculates which fuel is more cost-effective (Gasoline or Alcohol) based on the common rule:
+> If the price of Alcohol is up to **70%** of the price of Gasoline, Alcohol is the better choice.  
+> Otherwise, Gasoline is the best option.
+
+---
+
+## 🧠 Project Goal
+
+- Practice:
+  - React
+  - TypeScript
+  - Componentization
+  - Conditional logic
+  - Git version control (branches)
+
+---
+
+## 🚀 Technologies Used
+
+- React
+- TypeScript
+- Vite
+- Git
+
+---
+
+## 📦 Features
+
+- Input the Gasoline price
+- Input the Alcohol price
+- Automatically calculate which fuel is more cost-effective
+- Display the result in a simple and clear way
+
+---
+
+## 🛠️ How to Run the Project
+
+# Clone the repository
+git clone https://github.com/seu-usuario/calculadora-gasolina-alcool.git
+
+# Enter the project folder
+cd calculadora-gasolina-alcool
+
+# Install dependencies
+npm install
+
+# Run the project
+npm run dev
+
+---
+
+## 🇧🇷 Português
+
 # ⛽ Calculadora de Gasolina x Álcool
 
 Pequeno projeto desenvolvido com o objetivo de **treinar React, TypeScript e uso de branches no Git**.
@@ -23,7 +89,7 @@ A aplicação calcula qual combustível é mais vantajoso (Gasolina ou Álcool) 
 
 - React
 - TypeScript
-- Vite (ou Create React App)
+- Vite
 - Git
 
 ---
@@ -39,7 +105,6 @@ A aplicação calcula qual combustível é mais vantajoso (Gasolina ou Álcool) 
 
 ## 🛠️ Como Executar o Projeto
 
-```bash
 # Clonar o repositório
 git clone https://github.com/seu-usuario/calculadora-gasolina-alcool.git
 
