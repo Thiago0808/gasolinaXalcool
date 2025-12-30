@@ -48,16 +48,16 @@ The application calculates which fuel is more cost-effective (Gasoline or Alcoho
 
 ## 🛠️ How to Run the Project
 
-# Clone the repository
+### Clone the repository
 git clone https://github.com/seu-usuario/calculadora-gasolina-alcool.git
 
-# Enter the project folder
+### Enter the project folder
 cd calculadora-gasolina-alcool
 
-# Install dependencies
+### Install dependencies
 npm install
 
-# Run the project
+### Run the project
 npm run dev
 
 ---
@@ -105,14 +105,14 @@ A aplicação calcula qual combustível é mais vantajoso (Gasolina ou Álcool) 
 
 ## 🛠️ Como Executar o Projeto
 
-# Clonar o repositório
+### Clonar o repositório
 git clone https://github.com/seu-usuario/calculadora-gasolina-alcool.git
 
-# Entrar na pasta do projeto
+### Entrar na pasta do projeto
 cd calculadora-gasolina-alcool
 
-# Instalar as dependências
+### Instalar as dependências
 npm install
 
-# Rodar o projeto
+### Rodar o projeto
 npm run dev
